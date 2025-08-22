@@ -1,4 +1,3 @@
-
 ---
 title: Praktek OOP
 emoji: 👀
