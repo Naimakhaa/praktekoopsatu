@@ -6,7 +6,7 @@ $waktu = date("Y-m-d H:i:s");
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Home - Website Kharizma</title>
+    <title>Home - Website PHP</title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
         .container { max-width: 600px; margin: 0 auto; }
