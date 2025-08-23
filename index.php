@@ -1,5 +1,4 @@
 <?php
-// index.php
 $nama = "Peserta Praktik";
 $waktu = date("Y-m-d H:i:s");
 ?>
@@ -7,11 +6,12 @@ $waktu = date("Y-m-d H:i:s");
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Website PHP di Hugging Face</title>
+    <title>Website PHP Kharizma</title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
         .container { max-width: 600px; margin: 0 auto; }
         .box { background: #f0f8ff; padding: 20px; border-radius: 10px; margin-top: 20px; }
+        a { text-decoration: none; color: #0077cc; }
     </style>
 </head>
 <body>
@@ -20,7 +20,7 @@ $waktu = date("Y-m-d H:i:s");
         <p>Halo <strong><?= htmlspecialchars($nama) ?></strong></p>
         <div class="box">
             <p>Waktu server: <code><?= $waktu ?></code></p>
-            <p>Dijalankan di <strong>Docker</strong> di Hugging Face Spaces ✅</p>
+            <p><a href="home.php">Ke Halaman Home</a></p>
         </div>
     </div>
 </body>
