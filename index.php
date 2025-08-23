@@ -1,4 +1,6 @@
 <?php
+// Mengatur halaman: index atau home
+$page = $_GET['page'] ?? 'index';
 $nama = "Peserta Praktik";
 $waktu = date("Y-m-d H:i:s");
 ?>
@@ -16,12 +18,25 @@ $waktu = date("Y-m-d H:i:s");
 </head>
 <body>
     <div class="container">
-        <h1>Selamat Datang di Website Kharizma!</h1>
-        <p>Halo <strong><?= htmlspecialchars($nama) ?></strong></p>
-        <div class="box">
-            <p>Waktu server: <code><?= $waktu ?></code></p>
-            <p><a href="home.php">Ke Halaman Home</a></p>
-        </div>
+        <?php if ($page === 'index'): ?>
+            <h1>Selamat Datang di Website Kharizma!</h1>
+            <p>Halo <strong><?= htmlspecialchars($nama) ?></strong></p>
+            <div class="box">
+                <p>Waktu server: <code><?= $waktu ?></code></p>
+                <p><a href="?page=home">Ke Halaman Home</a></p>
+            </div>
+
+        <?php elseif ($page === 'home'): ?>
+            <h1>Ini Halaman Home!</h1>
+            <p>Halo <strong><?= htmlspecialchars($nama) ?></strong></p>
+            <div class="box">
+                <p>Waktu server: <code><?= $waktu ?></code></p>
+                <p><a href="?page=index">Kembali ke Index</a></p>
+            </div>
+        <?php else: ?>
+            <h1>Halaman tidak ditemukan!</h1>
+            <p><a href="?page=index">Kembali ke Index</a></p>
+        <?php endif; ?>
     </div>
 </body>
 </html>
