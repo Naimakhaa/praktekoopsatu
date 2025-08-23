@@ -27,7 +27,7 @@ $waktu = date("Y-m-d H:i:s");
             </div>
 
         <?php elseif ($page === 'home'): ?>
-            <h1>Ini Halaman Home!</h1>
+            <h1> Halaman Home!</h1>
             <p>Halo <strong><?= htmlspecialchars($nama) ?></strong></p>
             <div class="box">
                 <p>Waktu server: <code><?= $waktu ?></code></p>
@@ -35,7 +35,7 @@ $waktu = date("Y-m-d H:i:s");
             </div>
         <?php else: ?>
             <h1>Halaman tidak ditemukan!</h1>
-            <p><a href="?page=index">Kembali ke Index</a></p>
+            <p><a href="?page=index">Kembali ke Halaman utama</a></p>
         <?php endif; ?>
     </div>
 </body>
