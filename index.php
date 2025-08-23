@@ -31,7 +31,7 @@ $waktu = date("Y-m-d H:i:s");
             <p>Halo <strong><?= htmlspecialchars($nama) ?></strong></p>
             <div class="box">
                 <p>Waktu server: <code><?= $waktu ?></code></p>
-                <p><a href="?page=index">Kembali ke Index</a></p>
+                <p><a href="?page=index">Kembali ke Halaman utama</a></p>
             </div>
         <?php else: ?>
             <h1>Halaman tidak ditemukan!</h1>
