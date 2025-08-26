@@ -27,7 +27,7 @@ $waktu = date("Y-m-d H:i:s");
             </div>
 
         <?php elseif ($page === 'home'): ?>
-            <h1> Halaman Home!</h1>
+            <h1> Anda Sedang Berada di Halaman Home!</h1>
             <p>Halo <strong><?= htmlspecialchars($nama) ?></strong></p>
             <div class="box">
                 <p>Waktu server: <code><?= $waktu ?></code></p>
